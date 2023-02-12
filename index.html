@@ -3,7 +3,9 @@
 <body>
 
   <p>Click the button to get your coordinates.</p>
-    <button onclick="getLocation()">Try It</button>
+  
+  <button onclick="getLocation()">Try It</button>
+  
   <p id="demo"></p>
 
   <script>
@@ -16,6 +18,7 @@
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
   }
+  
   function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
